@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
-// No need to watch Video-10,11,12,13
+// No need to watch Video-10,11,12,13,14,16,17,18
 public class Video_10 {
     @Test
     void test(){
