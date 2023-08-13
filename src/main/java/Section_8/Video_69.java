@@ -11,9 +11,9 @@ import java.util.List;
 
 public class Video_69 {
     // No need to watch the video 69,70,
-    // Video 71 and 72--> This is very Imp, Must watch again
+    // Video 71 and 72, 73--> This is very Imp, Must watch again
     WebDriver driver = new ChromeDriver();
-    String [] productList = {"Brocol","Cauliflower","Cucumber"};
+    String [] productList = {"Brocolli","Cauliflower","Cucumber"};
     @Test
     void test() throws InterruptedException {
 
@@ -33,7 +33,8 @@ public class Video_69 {
         for(String product : productList){
             System.out.println("Product you want to select->"+product);
             for(WebElement element:list){
-                if(element.getText().contains(product)){
+                if(element.getText().split("-")[0].trim().contains(product)){
+                    System.out.println("product selected ->"+element.getText().split("-")[0].trim());
                     driver.findElement(By.xpath("//h4[contains(text(),'"+product+"')]/parent::div//div/button")).click();
                     break;
                 }
