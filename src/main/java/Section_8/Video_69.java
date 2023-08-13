@@ -35,6 +35,7 @@ public class Video_69 {
             for(WebElement element:list){
                 if(element.getText().contains(product)){
                     driver.findElement(By.xpath("//h4[contains(text(),'"+product+"')]/parent::div//div/button")).click();
+                    break;
                 }
             }
         }
