@@ -11,7 +11,7 @@ import java.util.List;
 
 public class Video_69 {
     // No need to watch the video 69,70,
-    // Video 71 and 72--> This is very very Imp
+    // Video 71 and 72--> This is very Imp, Must to watch again
     WebDriver driver = new ChromeDriver();
     String [] productList = {"Brocol","Cauliflower","Cucumber"};
     @Test
