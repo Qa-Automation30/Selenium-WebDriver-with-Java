@@ -13,7 +13,7 @@ import java.util.List;
 
 public class Video_76 {
     // No need to watch the video 76,77
-    // video 78 and 79 are Very Imp
+    // video 78 and 79,80 are Very Imp
     WebDriver driver = new ChromeDriver();
     String [] productList = {"Brocolli","Cauliflower","Cucumber"};
     WebDriverWait _wait;
@@ -26,15 +26,21 @@ public class Video_76 {
         addMultipleProductToCart(productList,_list);
         driver.findElement(By.xpath("//img[@alt='Cart']")).click();
         driver.findElement(By.xpath("//button[text()='PROCEED TO CHECKOUT']")).click();
-       // driver.findElement(By.className("promoCode")).sendKeys("test");
-        explicitWaitVisibilityOf(driver,20,driver.findElement(By.xpath("//input[@class='promoCode']")));
+
+        /*explicitWaitVisibilityOf(driver,20,driver.findElement(By.xpath("//input[@class='promoCode']")));*/
+        visibilityOfElementLocated(driver,5,By.xpath("//input[@class='promoCode']"));
         driver.findElement(By.xpath("//input[@class='promoCode']")).sendKeys("Promo");
         driver.findElement(By.xpath("//button[@class='promoBtn']")).click();
+        Thread.sleep(3000);
         driver.close();
     }
     void explicitWaitVisibilityOf(WebDriver driver, int time, WebElement element){
         _wait  = new WebDriverWait(driver,Duration.ofSeconds(time));
         _wait.until(ExpectedConditions.visibilityOf(element));
+    }
+    void visibilityOfElementLocated(WebDriver driver, int time, By locator){
+        _wait  = new WebDriverWait(driver,Duration.ofSeconds(time));
+        _wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
     WebElement addSingleProductToCart(String _productName){
