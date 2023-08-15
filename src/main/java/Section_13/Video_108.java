@@ -8,14 +8,13 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
-import java.net.URLConnection;
 import java.util.List;
 
 public class Video_108 {
     // Can watch it again , as it shows how to take ScreenShot.
     // Video 109,110,111 we watch again and again
+    // No need to watch again video 112
     WebDriver driver = new ChromeDriver();
     @Test
     void test() throws InterruptedException, IOException {
