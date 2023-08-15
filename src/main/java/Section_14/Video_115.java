@@ -45,7 +45,7 @@ public class Video_115 {
         System.out.println("Total no of persons whose name starts with A-->"+count);
     }
 
-    @Test
+    @Test(enabled = false)
     void usingStreams(){
         // Using Streams here to optimize our code
         List<String> nameList = new ArrayList<>();
@@ -60,5 +60,19 @@ public class Video_115 {
        System.out.println(count);
        // Now find the person whose name is "Noop" using Streams
         nameList.stream().filter(name->name.equals("Noop")).forEach(name->System.out.println(name));
+    }
+    @Test
+    void usingStreams_1(){
+        // Using Streams here to optimize our code
+        List<String> nameList = new ArrayList<>();
+        nameList.add("Abc");
+        nameList.add("xyzzz");
+        nameList.add("klmmm");
+        nameList.add("aqq");
+        nameList.add("Noop");
+        nameList.add("aff");
+
+        // Now to select only those names having more than length is 4 and also converts into upperCase
+        nameList.stream().filter(s->s.length()>4).forEach(s->System.out.println(s.toUpperCase()));
     }
 }
