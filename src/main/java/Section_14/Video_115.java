@@ -58,8 +58,7 @@ public class Video_115 {
         // This is the concept of Streams and you can reduce your code like below .[Compare with above testCases 3rd step]
        long count = nameList.stream().filter(s->s.toUpperCase().startsWith("A")).count();
        System.out.println(count);
-       // // Now find the person whose name is "Noop" using Streams
-        nameList.stream().filter(name->name.equals("test")).forEach(name->System.out.println(name));
-
+       // Now find the person whose name is "Noop" using Streams
+        nameList.stream().filter(name->name.equals("Noop")).forEach(name->System.out.println(name));
     }
 }
