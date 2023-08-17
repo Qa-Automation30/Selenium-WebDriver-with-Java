@@ -24,8 +24,16 @@ public class Test_2 {
             }
         }
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-        // using streams -->
+        // using streams one way -->
         numbers.stream().filter(s->(s%2==0)).forEach((s ->System.out.println(s*s)));
+        // using streams 2nd way -->
+        numbers.stream().filter(i->i%2==0).map(i->i*i).forEach(i->System.out.println(i));
+        /**
+         * .filter(s -> (s % 2 == 0)): This is an intermediate operation.
+         * It filters the elements of the Stream based on a condition.
+         * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         * .map(i -> i * i): This is another intermediate operation.
+         */
 
     }
 }
