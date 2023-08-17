@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.function.Predicate;
 
 public class TableDemoPage {
     private WebDriver driver;
@@ -28,5 +29,17 @@ public class TableDemoPage {
                 .map(tdList->tdList.get(3))
                 .map(tdList->tdList.findElement(By.tagName("input")))
                 .forEach(WebElement::click);
+    }
+    public void selectRows_1(Predicate<List<WebElement>> predicate){
+        List<WebElement> elements = driver.findElements(By.tagName("tr"));
+        elements
+                .stream()
+                .skip(1)
+                .map(tr->tr.findElements(By.tagName("td")))
+                .filter(predicate)
+                .map(tdList->tdList.get(3))
+                .map(tdList->tdList.findElement(By.tagName("input")))
+                .forEach(WebElement::click);
+
     }
 }
