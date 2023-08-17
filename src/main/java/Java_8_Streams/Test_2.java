@@ -12,7 +12,10 @@ public class Test_2 {
         numbers.add(4);
         numbers.add(5);
         numbers.add(7);
-        numbers.add(11);
+        numbers.add(12);
+        numbers.add(6);
+        numbers.add(8);
+        numbers.add(32);
         /**
          * Problem statement is here->
          * 1. Check for even number and find the square and print it on console
@@ -25,15 +28,32 @@ public class Test_2 {
         }
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         // using streams one way -->
-        numbers.stream().filter(s->(s%2==0)).forEach((s ->System.out.println(s*s)));
+        numbers.
+                stream().
+                filter(s->s%2==0).
+                forEach((s ->System.out.println(s*s)));
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         // using streams 2nd way -->
-        numbers.stream().filter(i->i%2==0).map(i->i*i).forEach(i->System.out.println(i));
+        numbers.
+                stream().
+                filter(i->i%2==0).
+                map(i->i*i).
+                forEach(i->System.out.println(i));
         /**
          * .filter(s -> (s % 2 == 0)): This is an intermediate operation.
          * It filters the elements of the Stream based on a condition.
          * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
          * .map(i -> i * i): This is another intermediate operation.
          */
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        // Now what we need to do we need to first sort the data and then print the Square of the even number-->
+        numbers.
+                stream().
+                sorted().
+                filter(i->i%2==0)
+                .limit(3).
+                map(i->i*i).
+                forEach(i->System.out.println(i));
 
     }
 }
