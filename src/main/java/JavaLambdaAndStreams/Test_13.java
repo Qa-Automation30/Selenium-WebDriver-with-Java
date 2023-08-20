@@ -54,7 +54,7 @@ public class Test_13 {
          */
         /**
          *  O/P-->
-         *  {name='Java', category='Development', reviewScore='4', noOfStudents='268'},
+         * {name='Java', category='Development', reviewScore='4', noOfStudents='268'},
          * {name='Selenium', category='Automation', reviewScore='4', noOfStudents='200'},
          * {name='Azure', category='Devops', reviewScore='3', noOfStudents='200'},
          * {name='Aws', category='Devops', reviewScore='2', noOfStudents='200'},
@@ -62,8 +62,8 @@ public class Test_13 {
          * {name='Cucumber', category='Automation', reviewScore='3', noOfStudents='36'},
          * {name='Cypress', category='Automation', reviewScore='4', noOfStudents='22'}
          */
-        Comparator<Course> comByNoOfStudents = Comparator.comparing(course -> Integer.parseInt(course.getNoOfStudents()));
-        Comparator<Course> comByCourseRating = Comparator.comparing(course -> Integer.parseInt(course.getReviewScore()));
+        Comparator<Course> comByNoOfStudents = Comparator.comparingInt(course -> Integer.parseInt(course.getNoOfStudents()));
+        Comparator<Course> comByCourseRating = Comparator.comparingInt(course -> Integer.parseInt(course.getReviewScore()));
         System.out.println(
                 list.stream().sorted(
                         comByNoOfStudents.
