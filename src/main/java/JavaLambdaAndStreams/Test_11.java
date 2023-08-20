@@ -38,7 +38,9 @@ public class Test_11 {
          * Now you can call the method, and it looks like more generic
          */
         List<Integer> evenNumbers = Test_11.filterNumbers(list,evenNumber);
+        System.out.println(evenNumbers);
         List<Integer> oddNumbers = Test_11.filterNumbers(list,oddNumber);
+        System.out.println(oddNumbers);
         }
     /**
      * Created a common method which is responsible for filtering the number
