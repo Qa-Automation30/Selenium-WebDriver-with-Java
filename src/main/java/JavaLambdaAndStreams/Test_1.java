@@ -25,7 +25,7 @@ public class Test_1 {
         // This is the functional Approach to write the code, to print each number from the list
         list.stream().forEach(num->System.out.println(num));
         System.out.println("This is ~~~~~~~~~~~~~~~");
-        // This is the functional Approach to write the code, to print each number from the list and used the Method reference
+        // This is the functional Approach to write the code, to print each number from the list and used the Method reference, inside the for Each loop
         list.stream().forEach(System.out::println);
     }
 
