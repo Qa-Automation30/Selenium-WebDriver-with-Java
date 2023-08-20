@@ -21,7 +21,7 @@ public class Test_5 {
         list.add(8);
         list.add(9);
 
-        // how to find the distinct number is list-->
+        // how to find the distinct number is list--> [means remove the duplicates from the list]
         /**
          * We can collect all the distinct into a new list and print it--.
          */
