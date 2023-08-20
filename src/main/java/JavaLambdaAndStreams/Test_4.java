@@ -29,5 +29,15 @@ public class Test_4 {
         System.out.println(sum);
         // 2nd way to write this
         System.out.println(list.stream().reduce(0,(a, b) -> a+b));
+
+        // problem -> Square every number in a list and find the sum of Squares
+       int sum1 = list.stream().map(n->n*n).reduce(0,(x, y)->x+y);
+       System.out.println(sum1);
+       //problem -> Cube every number in a list and find the sum of cubes
+        int sum2 = list.stream().map(n->n*n*n).reduce(0,(x,y)->(x+y));
+        System.out.println(sum2);
+        //problem -> find sum of odd numbers in list
+       int sum3 = list.stream().filter(n->n%2!=0).reduce(0,(x,y)->(x+y));
+       System.out.println(sum3);
     }
 }
