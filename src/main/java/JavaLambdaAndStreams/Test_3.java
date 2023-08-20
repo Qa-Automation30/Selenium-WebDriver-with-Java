@@ -27,7 +27,7 @@ public class Test_3 {
         list.stream().filter(w->w.length()>=4).forEach(w->System.out.println(w));
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         // print the number of characters in each course name
-        list.stream().map(w->w.length()).forEach(System.out::println);
+        list.stream().map(course-> course +"-->"+course.length()).forEach(System.out::println);
     }
 
 
