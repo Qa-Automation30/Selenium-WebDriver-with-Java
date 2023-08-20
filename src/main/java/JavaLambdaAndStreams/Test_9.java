@@ -7,6 +7,7 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 
 public class Test_9 {
+    // Section 18 is very Imp
     /**
      * This section is all about Functional Interfaces...
      * @param args
