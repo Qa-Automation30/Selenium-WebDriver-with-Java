@@ -18,8 +18,12 @@ public class Test_2 {
         /**
          * Now print only the even numbers from the list
          */
+        // A Stream is basically a sequence of the elements.
         list.stream().
-                filter(num->num%2==0).
+                filter(num->num%2==0). // Lambda Expressions
                 forEach(num->System.out.println("Even number are-->"+num));
+
+        // Now print only the odd numbers in the list
+        list.stream().filter(num->num%2==1).forEach(num->System.out.println("odd number-->"+num));
     }
 }
