@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Test_3 {
     @Test
@@ -24,6 +25,9 @@ public class Test_3 {
         // Print courses whose name has at least 4 letters.
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         list.stream().filter(w->w.length()>=4).forEach(w->System.out.println(w));
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        // print the number of characters in each course name
+        list.stream().map(w->w.length()).forEach(System.out::println);
     }
 
 

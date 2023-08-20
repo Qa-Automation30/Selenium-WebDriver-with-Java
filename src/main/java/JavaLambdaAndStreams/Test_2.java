@@ -28,5 +28,9 @@ public class Test_2 {
         System.out.println("~~~~~~~~~~~~~~~~~~~~~");
         // Now print the square of all numbers....
         list.stream().map(n->n*n).forEach(n->System.out.println(n));
+
+        // print the cubes only for odd numbers
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~");
+        list.stream().filter(n->n%2!=0).map(n->n*n*n).forEach(System.out::println);
     }
 }
