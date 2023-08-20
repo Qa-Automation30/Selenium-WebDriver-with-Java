@@ -8,6 +8,8 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
+// This is the very very Imp section
+
 public class Test_13 {
     public static void main(String args[]){
         List<Course> list = new ArrayList<>();
@@ -71,8 +73,5 @@ public class Test_13 {
                                 reversed()).
                         collect(Collectors.toList())
         );
-
-
-
     }
 }
