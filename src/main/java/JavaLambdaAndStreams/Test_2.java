@@ -25,5 +25,8 @@ public class Test_2 {
 
         // Now print only the odd numbers in the list
         list.stream().filter(num->num%2!=0).forEach(num->System.out.println("odd number-->"+num));
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~");
+        // Now print the square of all numbers....
+        list.stream().map(n->n*n).forEach(n->System.out.println(n));
     }
 }
