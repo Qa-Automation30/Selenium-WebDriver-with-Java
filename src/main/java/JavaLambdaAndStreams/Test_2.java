@@ -18,6 +18,8 @@ public class Test_2 {
         /**
          * Now print only the even numbers from the list
          */
-        list.stream().filter(num->num%2==0).forEach(num->System.out.println("Even number are-->"+num));
+        list.stream().
+                filter(num->num%2==0).
+                forEach(num->System.out.println("Even number are-->"+num));
     }
 }
