@@ -24,6 +24,6 @@ public class Test_2 {
                 forEach(num->System.out.println("Even number are-->"+num));
 
         // Now print only the odd numbers in the list
-        list.stream().filter(num->num%2==1).forEach(num->System.out.println("odd number-->"+num));
+        list.stream().filter(num->num%2!=0).forEach(num->System.out.println("odd number-->"+num));
     }
 }
