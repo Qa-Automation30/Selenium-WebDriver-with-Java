@@ -11,15 +11,19 @@ public class Test_5 {
     @Test
     void test() {
         List<Integer> list = new ArrayList<>();
-        list.add(1);
+        list.add(11);
         list.add(2);
+        list.add(31);
         list.add(3);
-        list.add(3);
-        list.add(4);
-        list.add(4);
-        list.add(7);
-        list.add(8);
-        list.add(9);
+        list.add(41);
+        list.add(14);
+        list.add(57);
+        list.add(58);
+        list.add(90);
+        list.add(14);
+        list.add(57);
+        list.add(58);
+        list.add(90);
 
         // how to find the distinct number is list--> [means remove the duplicates from the list]
         /**
@@ -31,5 +35,9 @@ public class Test_5 {
          * another way We can just print the distinct numbers...
          */
         list.stream().distinct().forEach(n->System.out.println(n));
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+
+        // how to sort the list and print it in console
+        list.stream().sorted().forEach(n->System.out.println(n));
     }
 }
