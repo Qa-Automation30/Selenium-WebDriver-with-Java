@@ -24,6 +24,10 @@ public class Test_4 {
         /**
          *  As we have open the Stream and our next step is just to combine the sum into one step ==> One value
          */
+        // 1st way to write this [reduce is the main key here]
+        int sum = list.stream().reduce(0,(a, b) -> a+b);
+        System.out.println(sum);
+        // 2nd way to write this
         System.out.println(list.stream().reduce(0,(a, b) -> a+b));
     }
 }
