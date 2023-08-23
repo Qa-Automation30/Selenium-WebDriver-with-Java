@@ -11,4 +11,15 @@ public class Test_1 {
      * c) Lambdas are not tied to any class like a regular method.
      * d) Lambda can also be assigned to variable and passed around in any other class.
      */
+    //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    /**
+     *  This is the Lambda Expression:  [Refer the "Syntax_Of_LambdaExpression.png"]
+     *    ( ) -> { }
+     */
+    //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    /**
+     *  Usage of Lambda -->
+     *  1) it's main purpose is to implement the Functional interfaces.
+     *  Functional interfaces -> Called as SAM (Single abstract method interfaces)
+     */
 }
