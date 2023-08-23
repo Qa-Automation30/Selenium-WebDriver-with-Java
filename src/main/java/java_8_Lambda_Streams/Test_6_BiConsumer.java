@@ -1,5 +1,12 @@
 package java_8_Lambda_Streams;
 
+import java_8_Lambda_Streams.consumerRealExample.Student;
+import java_8_Lambda_Streams.consumerRealExample.StudentDataBase;
+import org.testng.annotations.Test;
+
+import java.util.List;
+import java.util.function.BiConsumer;
+
 public class Test_6_BiConsumer {
     /**
      *  BiConsumer interface is the extension of the Consumer interface.
@@ -18,4 +25,12 @@ public class Test_6_BiConsumer {
      * you need to perform some operation that involves two input parameters,
      * such as updating two values in a map, performing actions on pairs of elements, or applying operations on pairs of arguments.
      */
+    @Test
+    void test(){
+        BiConsumer<String,String> biConsumer = (s1,s2)->System.out.println(s1+s2);
+        biConsumer.accept("java","8");
+
+        BiConsumer<Integer,Integer> biConsumer1 = (s1,s2)->System.out.println(s1+s2);
+        biConsumer1.accept(8,8);
+    }
 }
