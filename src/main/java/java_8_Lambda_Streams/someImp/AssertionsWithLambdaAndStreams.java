@@ -36,8 +36,6 @@ public class AssertionsWithLambdaAndStreams {
       System.out.println(allValues);
 
         Assert.assertEquals(expectedValues,elementsToAssert.stream().map(Functions.getAttributeValues).collect(Collectors.toList()));
-
-
         driver.quit();
     }
 

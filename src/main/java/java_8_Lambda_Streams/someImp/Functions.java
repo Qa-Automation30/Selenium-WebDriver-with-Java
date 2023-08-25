@@ -9,7 +9,7 @@ public class Functions {
     /**
      * 1st way to write this
      */
-   public static Function<WebElement,String> getAttributeValues = WebElement::getText;
+   public static Function<WebElement,String> getAttributeValues = e->e.getText();
     /**
      * 2nd way to write this as taking parameters
      * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
