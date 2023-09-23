@@ -1,6 +1,5 @@
-package java_8_Lambda_Streams.someImp;
+package java_8_Lambda_Streams_Pragmatic_Code_School.someImp;
 
-import com.google.common.util.concurrent.Uninterruptibles;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,9 +7,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
 import java.time.Duration;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
 
 public class IMp {
 

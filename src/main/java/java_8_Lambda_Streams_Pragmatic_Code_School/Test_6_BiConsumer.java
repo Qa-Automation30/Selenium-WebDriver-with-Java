@@ -1,10 +1,7 @@
-package java_8_Lambda_Streams;
+package java_8_Lambda_Streams_Pragmatic_Code_School;
 
-import java_8_Lambda_Streams.consumerRealExample.Student;
-import java_8_Lambda_Streams.consumerRealExample.StudentDataBase;
 import org.testng.annotations.Test;
 
-import java.util.List;
 import java.util.function.BiConsumer;
 
 public class Test_6_BiConsumer {

@@ -1,4 +1,4 @@
-package java_8_Lambda_Streams.someImp;
+package java_8_Lambda_Streams_Pragmatic_Code_School.someImp;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

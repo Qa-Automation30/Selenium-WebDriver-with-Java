@@ -1,4 +1,4 @@
-package java_8_Lambda_Streams.consumerRealExample;
+package java_8_Lambda_Streams_Pragmatic_Code_School.consumerRealExample;
 
 import java.util.Arrays;
 import java.util.List;
