@@ -13,7 +13,7 @@ public class Video_32 {
        List<Student> students = StudentDataBase.getAllStudents();
        Map<String,List<String>> studentMap = students.stream().collect(Collectors.toMap(Student::getName, Student::getActivities));
        System.out.println(studentMap);
-
+       System.out.println("=============================================================");
         // User case 2 -> I want student name and their activities in a map whose grade level is equal to 4 and above
        Map<String, List<String>> studMap = StudentDataBase.
                 getAllStudents().
@@ -21,5 +21,6 @@ public class Video_32 {
                 filter(student -> student.getGradeLevel()>=4).
                 collect(Collectors.toMap(Student::getName,Student::getActivities));
        System.out.println(studMap);
+        System.out.println("=============================================================");
     }
 }
