@@ -1,4 +1,4 @@
-package java_8_Lambda_Streams;
+package java_8_Lambda_Streams_Pragmatic_Code_School;
 
 public class Test_1 {
     /**

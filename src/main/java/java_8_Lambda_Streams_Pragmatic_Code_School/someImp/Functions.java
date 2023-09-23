@@ -1,9 +1,8 @@
-package java_8_Lambda_Streams.someImp;
+package java_8_Lambda_Streams_Pragmatic_Code_School.someImp;
 
 import org.openqa.selenium.WebElement;
 
 import java.util.function.Function;
-import java.util.function.Predicate;
 
 public class Functions {
     /**
